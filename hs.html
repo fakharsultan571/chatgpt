@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT Interface</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* General styling for the entire page */
+    main {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Container styling */
+    .container {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* background-color: skyblue; */
+      width: 700px;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+      top: 0;
+    }
+
+    /* Title styling */
+    .title {
+      justify-content: center;
+      align-items: center;
+      /* background-color: pink; */
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .title h1{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Input box styling */
+    .input-box {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      width: 100%;
+      border-radius: 22px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
+      position: relative;
+    }
+
+    /* Text input styling */
+    #input-Element {
+      width: 100%;
+      padding: 16px;
+      /* border: 1px solid #ccc; */
+      border: none;
+      box-sizing: border-box;
+      border-right: none;
+      border-radius: 30px;
+    }
+
+    /* Send button styling */
+    .send-button {
+      width: 30px;
+      padding: 6px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* background-color: rgb(155, 88, 6); */
+      color: white;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      /* top: 0; */
+      right: 10px;
+      border-radius: 0px 10px 10px 0px;
+    }
+
+    .send-button:hover{
+      background-color: rgb(240, 240, 240);
+      padding: 6px;
+      border-radius: 26px;
+    }
+
+    .send-button img{
+      width: 24px;
+    }
+
+    .output{
+      width: 100%;
+      height: 300px;
+      margin-top: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <!-- Title section -->
+      <div class="title">
+        <h1>ChatGPT</h1>
+      </div>
+
+      <!-- Input box section -->
+      <div class="input-box">
+        <input type="text" name="text-input" id="input-Element" placeholder="Prompt/">
+        <div class="send-button"><img src="send-outline.svg"></div>
+      </div>
+
+      <!-- Output section (currently empty) -->
+      <div class="output">
+        <!-- Output content goes here -->
+      </div>
+    </div>
+  </main>
+</body>
+</html>
